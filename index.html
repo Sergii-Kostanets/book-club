@@ -14,12 +14,12 @@
             <!--<form action="index.html" method="post">-->
             <form action="index.html" method="get">
                 <p>
-                    <label for="full-name">Full name</label>
-                    <input type="text" id="full-name" name="full-name">
+                    <label for="full-name">Full name *</label>
+                    <input type="text" id="full-name" name="full-name" required>
                 </p>
                 <p>
                     <label for="email">Email address</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
                 </p>
                 <p>
                     <label for="password">Choose a password</label>
@@ -28,6 +28,14 @@
                 <p>
                     <label for="books">Books you read last year</label>
                     <input type="number" id="books" name="books">
+                </p>
+                <p>
+                    <label for="start-date">When would you like to start? *</label>
+                    <input type="date" id="start-date" name="start-date" min="2026-09-01" max="2026-12-31" min="2026-09-01" max="2026-12-31" required>
+                </p>
+                <p>
+                    <label for="library-card">Library card number</label>
+                    <input type="text" id="library-card" name="library-card" pattern="[0-9]{6}" title="Six digits">
                 </p>
                 <fieldset>
                     <legend>How would you like to meet?</legend>
